@@ -1,3 +1,11 @@
-let num = 888
+import Visualization from './src/compontents/graphics/index'
 
-document.title = 'ming'
+let dom:HTMLElement = document.getElementById('canvas') as HTMLElement
+
+
+let v:Visualization = new Visualization(dom,{
+    width:400,
+    height:400
+})
+
+
