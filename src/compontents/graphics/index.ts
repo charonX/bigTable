@@ -1,5 +1,5 @@
 import * as spritejs from 'spritejs';
-import TextBlock from './elements/textBlock';
+import List from './dataStructure/list';
 
 interface Option {
     width: Number;
@@ -15,14 +15,8 @@ export default class Visualization {
         });
 
         let layer = this.scene.layer();
-        let a = new TextBlock('abc');
+        let a = new List([1, 2, 3, 4, 5]);
 
-        a.attr({
-            anchor: [0.5, 0.5],
-            bgcolor: '#ffcc00',
-            x: 20,
-            y: 20
-        });
         layer.append(a.container);
     }
 }

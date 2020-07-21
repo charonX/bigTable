@@ -1,11 +1,8 @@
-import Visualization from './src/compontents/graphics/index'
+import Visualization from './src/compontents/graphics/index';
 
-let dom:HTMLElement = document.getElementById('canvas') as HTMLElement
+let dom: HTMLElement = document.getElementById('canvas') as HTMLElement;
 
-
-let v:Visualization = new Visualization(dom,{
-    width:400,
-    height:400
-})
-
-
+let v: Visualization = new Visualization(dom, {
+    width: 400,
+    height: 400
+});
