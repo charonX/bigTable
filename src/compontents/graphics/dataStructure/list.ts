@@ -30,18 +30,29 @@ export default class List extends Base {
     private createBlock(list: Array<Number>): void {
         for (let i = 0; i < list.length; i++) {
             const item = list[i];
-            console.log(i);
             let block = new TextBlock(String(i));
-            console.log(block.container.offsetSize);
-            let pos = [0, 0];
-            if (this.option.align === 'horizontal') {
-                pos[0] = i;
-            }
+            // setTimeout(() => {
+            //     console.log(block.container.offsetSize, block.container.contentSize);
+            // });
+            // let pos = [0, 0];
+            // if (this.option.align === 'horizontal') {
+            //     let space: number = this.option.space || 0;
+            //     let x = space * i + i * 20;
+            //     pos[0] = x;
+            //     pos[1] = size[1] / 2;
+            // } else if (this.option.align === 'vertical') {
+            //     let space: number = this.option.space || 0;
+            //     let y = space * i + i * 20;
+            //     pos[0] = size[0] / 2;
+            //     pos[1] = y;
+            // }
 
-            block.attr({
-                pos: pos
-            });
+            // block.attr({
+            //     pos: pos
+            // });
             this.container.append(block.container);
+            this.container.after;
         }
     }
+    private update() {}
 }
